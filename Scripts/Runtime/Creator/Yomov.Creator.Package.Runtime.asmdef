@@ -1,0 +1,23 @@
+{
+    "name": "Yomov.Creator.Package.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7c88a4a7926ee5145ad2dfa06f454c67",
+        "GUID:aeb2e1191eff7224e8a55d44af9f707e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.firstgeargames.fishnet",
+            "expression": "3.10.8",
+            "define": "FISHNET_3_10_8"
+        }
+    ],
+    "noEngineReferences": false
+}

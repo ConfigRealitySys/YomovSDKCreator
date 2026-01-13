@@ -1,0 +1,19 @@
+{
+    "name": "Yomov.Creator.Package.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:aeb2e1191eff7224e8a55d44af9f707e",
+        "GUID:e409b6dbcff1120428df2467bd23082e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

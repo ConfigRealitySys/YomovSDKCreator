@@ -1,0 +1,30 @@
+{
+  "name": "com.unity.yomov.sdk.creator",
+  "displayName": "Yomov SDK Creator",
+  "version": "1.3.3",
+  "unity": "2021.3",
+  "description": "版本1.3.3:1、移除Fishnet的Yak模式，在测试环境下，当10秒之内没有连接上多人，转为单人模式体验；2、优化Core和Creator的预制体和脚本；3、完成测试工具：性能面板、切换场景面板、加速播放面板",
+  "keywords": [
+    "yomov",
+    "sdk"
+  ],
+  "dependencies": {
+    "com.unity.localization": "1.4.5",
+    "com.unity.animation.rigging": "1.2.1",
+    "com.unity.render-pipelines.universal": "14.0.11",
+    "com.unity.cinemachine": "2.9.7",
+    "com.unity.render-pipelines.core": "14.0.8"
+  },
+  "samples": [
+    {
+      "displayName": "InitScene",
+      "description": "Init Scene",
+      "path": "Samples/InitScene"
+    },
+    {
+      "displayName": "SDKPrefab",
+      "description": "SDK Prefab",
+      "path": "Samples/SDKPrefab"
+    }
+  ]
+}
