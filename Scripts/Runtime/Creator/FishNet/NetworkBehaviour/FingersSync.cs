@@ -16,11 +16,11 @@ namespace Yomov
     public class FingersSync : TeamNetBehaviour, IFingersSync
     {
 #if FISHNET_3_10_8
-        [field: SyncVar(SendRate = FishNetConfig.AvatarSyncTime, OnChange = nameof(OnLeftHandDataChange))]
-        private FingersData _syncLeftHand { get; [ServerRpc] set; }
+        [SyncVar(SendRate = FishNetConfig.AvatarSyncTime, OnChange = nameof(OnLeftHandDataChange))]
+        private FingersData _syncLeftHand;
         
-        [field: SyncVar(SendRate = FishNetConfig.AvatarSyncTime, OnChange = nameof(OnRightHandDataChange))]
-        private FingersData _syncRightHand { get; [ServerRpc] set; }
+        [SyncVar(SendRate = FishNetConfig.AvatarSyncTime, OnChange = nameof(OnRightHandDataChange))]
+        private FingersData _syncRightHand;
 #else
         private FingersData _syncLeftHand;
         private FingersData _syncRightHand;
@@ -58,7 +58,11 @@ namespace Yomov
         /// </summary>
         public void SetSyncLeftHand(FingersData data)
         {
-            _syncLeftHand = data;  // FishNet 时自动触发 ServerRpc
+#if FISHNET_3_10_8
+            SyncLeftHandData(data);
+#else
+            _syncLeftHand = data;
+#endif
         }
         
         /// <summary>
@@ -66,7 +70,11 @@ namespace Yomov
         /// </summary>
         public void SetSyncRightHand(FingersData data)
         {
-            _syncRightHand = data;  // FishNet 时自动触发 ServerRpc
+#if FISHNET_3_10_8
+            SyncRightHandData(data);
+#else
+            _syncRightHand = data;
+#endif
         }
         
         #endregion
@@ -109,6 +117,18 @@ namespace Yomov
         }
         
 #if FISHNET_3_10_8
+        [ServerRpc]
+        private void SyncLeftHandData(FingersData data)
+        {
+            _syncLeftHand = data;
+        }
+        
+        [ServerRpc]
+        private void SyncRightHandData(FingersData data)
+        {
+            _syncRightHand = data;
+        }
+        
         private void OnLeftHandDataChange(FingersData prev, FingersData next, bool asServer)
         {
             OnLeftHandDataChangedEvent?.Invoke(prev, next, asServer);

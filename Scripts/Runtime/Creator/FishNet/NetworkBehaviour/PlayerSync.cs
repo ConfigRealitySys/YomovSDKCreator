@@ -270,7 +270,7 @@ namespace Yomov
 #if FISHNET_3_10_8
             if (!IsServer)
             {
-                Debug.LogWarning("ServerSetMultiBodySyncData can only be called on the server!");
+                // Debug.LogWarning("ServerSetMultiBodySyncData can only be called on the server!");
                 return;
             }
             multiBodySyncData = bodyData;

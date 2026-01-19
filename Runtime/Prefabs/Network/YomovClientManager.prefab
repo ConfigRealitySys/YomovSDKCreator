@@ -71,7 +71,7 @@ MonoBehaviour:
   _levelOfDetailDistances: []
   _updateHostVisibility: 1
   _defaultConditions:
-  - {fileID: 11400000, guid: 20620590102ab8542b508bd5fe8aa01f, type: 2}
+  - {fileID: 11400000, guid: a78f27f189828c54ea39c26adb2a770b, type: 2}
 --- !u!114 &2649971472209390325
 MonoBehaviour:
   m_ObjectHideFlags: 0

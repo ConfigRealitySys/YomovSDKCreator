@@ -86,7 +86,7 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 6827844760110326562}
   sameTeamDistance: 3
   otherTeamDistance: 0
-  <_syncLeftHand>k__BackingField:
+  _syncLeftHand:
     thumb:
       metacarpal: 0
       proximal: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
       proximal: 0
       intermediate: 0
       distal: 0
-  <_syncRightHand>k__BackingField:
+  _syncRightHand:
     thumb:
       metacarpal: 0
       proximal: 0

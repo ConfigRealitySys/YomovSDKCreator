@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7302552535442463568}
   - component: {fileID: 2643706693766537028}
   - component: {fileID: 2692877203494675911}
+  - component: {fileID: -746854663647442100}
   m_Layer: 0
   m_Name: FishNetHands
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MonoBehaviour:
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 9
+  <PrefabId>k__BackingField: 2
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 355546782
   <SceneId>k__BackingField: 0
@@ -106,3 +107,15 @@ MonoBehaviour:
       rotation: {x: 0, y: 0, z: 0, w: 0}
     LeftHandISTracking: 0
     RightHandISTracking: 0
+--- !u!114 &-746854663647442100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071722023677346913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1161133340, guid: 7f5915b7b2223784297678c3d3db64f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

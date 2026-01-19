@@ -136,6 +136,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: YomovServerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6135701378207108084, guid: 5aa1c36b55c5c5444af2a2144c4c5635,
+        type: 3}
+      propertyPath: handPrefab
+      value: 
+      objectReference: {fileID: 7071722023677346913, guid: 4ea794bf9e50db1479461d9af79a7d01,
+        type: 3}
     - target: {fileID: 6931422428876000804, guid: 5aa1c36b55c5c5444af2a2144c4c5635,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -189,8 +195,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5932551668415155193, guid: 5aa1c36b55c5c5444af2a2144c4c5635,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4189949920993788236}
   m_SourcePrefab: {fileID: 100100000, guid: 5aa1c36b55c5c5444af2a2144c4c5635, type: 3}
+--- !u!1 &4189949920993788235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5932551668415155193, guid: 5aa1c36b55c5c5444af2a2144c4c5635,
+    type: 3}
+  m_PrefabInstance: {fileID: 4189949920993788234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4189949920993788236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4189949920993788235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1868375128, guid: 7f5915b7b2223784297678c3d3db64f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

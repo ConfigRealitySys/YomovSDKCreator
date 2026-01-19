@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6135701378207108084}
   - component: {fileID: 5100251408303728999}
   - component: {fileID: 2355188985905740780}
+  - component: {fileID: 7928952910033668367}
   m_Layer: 0
   m_Name: YomovServerManager
   m_TagString: Untagged
@@ -74,7 +75,7 @@ MonoBehaviour:
   _levelOfDetailDistances: []
   _updateHostVisibility: 1
   _defaultConditions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: a78f27f189828c54ea39c26adb2a770b, type: 2}
 --- !u!114 &6123650948688376478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 2025570709842892333, guid: 39652181070c1f046a19155391964b80,
     type: 3}
-  handPrefab: {fileID: 0}
+  handPrefab: {fileID: 7071722023677346913, guid: 4ea794bf9e50db1479461d9af79a7d01,
+    type: 3}
 --- !u!114 &5100251408303728999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,5 +179,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -605669395, guid: 7f5915b7b2223784297678c3d3db64f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7928952910033668367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932551668415155193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1868375128, guid: 7f5915b7b2223784297678c3d3db64f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

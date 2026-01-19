@@ -85,7 +85,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 5027183085736787082}
   _networkObjectCache: {fileID: 5027183085736787082}
   sameTeamDistance: 9999
-  otherTeamDistance: 10
+  otherTeamDistance: 5
   teamId: 0
   avatarResourceName: 
   avatarSkinResourceName: 

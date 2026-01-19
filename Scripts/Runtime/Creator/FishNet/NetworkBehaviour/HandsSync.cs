@@ -102,7 +102,7 @@ namespace Yomov
 #if FISHNET_3_10_8
             if (!IsServer)
             {
-                Debug.LogWarning("ServerSetMultiHandsSyncData can only be called on the server!");
+                // Debug.LogWarning("ServerSetMultiHandsSyncData can only be called on the server!");
                 return;
             }
             multiHandsSyncData = handData;
